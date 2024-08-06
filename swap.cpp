@@ -1,9 +1,6 @@
 #include <iostream>
 using namespace std;
 
-void changeByVal(int x);
-void changeByRef(int &x);
-
 int main() 
 {
     int x = 3, y = 5;
