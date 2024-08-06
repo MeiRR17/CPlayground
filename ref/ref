@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+
+int main() 
+{
+  int x = 5,y = 3;
+  int &ref = x;
+  
+  cout << &ref << " " << &x << endl;
+  cout << "x=" << x << ", y=" << y << ", ref=" << ref << endl;
+  x++;
+  cout << "x=" << x << ", y=" << y << ", ref=" << ref << endl;
+  ref = y;
+  cout << "x=" << x << ", y=" << y << ", ref=" << ref << endl;
+  ref++;
+  cout << "x=" << x << ", y=" << y << ", ref=" << ref << endl;
+}
+
+/*Output:
+
+0x7ffdd6ea3378 0x7ffdd6ea3378
+x=5, y=3, ref=5
+x=6, y=3, ref=6
+x=3, y=3, ref=3
+x=4, y=3, ref=4*/
