@@ -11,7 +11,7 @@ int main()
     changeByVal(num);
     cout << "after ByVal: num = " << num <<endl;
     changeByRef(num);
-    cout << "after ByVal: num = " << num <<endl;
+    cout << "after byRef: num = " << num <<endl;
     
     return 0;
 }
